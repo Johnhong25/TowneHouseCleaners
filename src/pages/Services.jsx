@@ -1,10 +1,12 @@
+import { Link } from 'react-router-dom'
+
 function Services() {
   return (
     <div className="min-h-screen bg-white">
 
       {/* Header */}
       <div className="pt-24 pb-8 text-center px-6 bg-gray-50">
-        <h1 className="text-5xl font-bold text-gray-900 mb-4">Our Services</h1>
+        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Our Services</h1>
         <p className="text-gray-500 text-lg max-w-xl mx-auto">
           Professional cleaning and tailoring services for every need
         </p>
@@ -151,13 +153,13 @@ function Services() {
         </h2>
         <p className="text-green-100 text-lg mb-8 max-w-xl mx-auto">
           Come in for a free assessment and we'll take care of the rest.
-        </p>
-        
-          href="/contact"
+        </p>
+        <Link
+          to="/contact"
           className="inline-block bg-white text-green-700 font-semibold px-8 py-4 rounded-full hover:bg-green-50 transition-colors"
-        <a>
+        >
           Get in Touch
-        </a>
+        </Link>
       </section>
 
     </div>

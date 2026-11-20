@@ -1,5 +1,5 @@
 function Contact() {
-  const GOOGLE_MAPS_API_KEY = 'AIzaSyD0HwqQNsUQqF_dahnszlhQoEHkLlfQhyg'
+  const GOOGLE_MAPS_API_KEY = 'AIzaSyAhaCDZ1lX-sUzu3u5SvmHwRa5YrB4AmDU'
   const address = '181 Einstein Loop S, Bronx NY 10475'
   const encodedAddress = encodeURIComponent(address)
 
@@ -8,7 +8,7 @@ function Contact() {
 
       {/* Header */}
       <div className="pt-24 pb-16 text-center px-6">
-        <h1 className="text-5xl font-bold text-gray-900 mb-4">Contact Us</h1>
+        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Contact Us</h1>
       </div>
 
       <div className="max-w-5xl mx-auto px-6 pb-24 grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -29,7 +29,7 @@ function Contact() {
             </div>
             <div>
               <p className="font-semibold text-gray-900">Phone</p>
-              <p className="text-gray-500">(718)-379-0900</p>
+              <a href="tel:+17183790900" className="text-gray-500 hover:text-green-700 underline-offset-4 hover:underline">(718) 379-0900</a>
             </div>
           </div>
 
@@ -42,7 +42,7 @@ function Contact() {
             </div>
             <div>
               <p className="font-semibold text-gray-900">Email</p>
-              <p className="text-gray-500">THC@townhousecleaners.com</p>
+              <a href="mailto:THC@townhousecleaners.com" className="text-gray-500 hover:text-green-700 underline-offset-4 hover:underline break-all">THC@townhousecleaners.com</a>
             </div>
           </div>
 
@@ -56,7 +56,7 @@ function Contact() {
             </div>
             <div>
               <p className="font-semibold text-gray-900">Address</p>
-              <p className="text-gray-500">{address}</p>
+              <a href={`https://www.google.com/maps/search/?api=1&query=${encodedAddress}`} target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-green-700 underline-offset-4 hover:underline">{address}</a>
             </div>
           </div>
 
@@ -78,7 +78,7 @@ function Contact() {
         </div>
 
         {/* Right — Google Map */}
-        <div className="rounded-2xl overflow-hidden shadow-lg h-[450px]">
+        <div className="rounded-2xl overflow-hidden shadow-lg h-80 md:h-[450px]">
           <iframe
             width="100%"
             height="100%"
@@ -86,6 +86,7 @@ function Contact() {
             loading="lazy"
             allowFullScreen
             referrerPolicy="no-referrer-when-downgrade"
+            title="Map to Town House Cleaners"
             src={`https://www.google.com/maps/embed/v1/place?key=${GOOGLE_MAPS_API_KEY}&q=${encodedAddress}`}
           />
         </div>
