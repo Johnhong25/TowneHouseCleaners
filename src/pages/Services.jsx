@@ -1,5 +1,10 @@
 import { Link } from 'react-router-dom'
 
+// Prices aren't final yet, so the site shows "N/A" instead.
+// When the prices below are correct, change this to true and redeploy.
+const SHOW_PRICES = false
+const price = (value) => (SHOW_PRICES ? value : 'N/A')
+
 function Services() {
   return (
     <div className="min-h-screen bg-white">
@@ -42,7 +47,7 @@ function Services() {
                 className="flex items-center justify-between px-6 py-4 rounded-xl bg-gray-50 hover:bg-green-50 transition-colors"
               >
                 <span className="text-gray-700 font-medium">{row.item}</span>
-                <span className="text-green-700 font-bold">{row.price}</span>
+                <span className="text-green-700 font-bold">{price(row.price)}</span>
               </div>
             ))}
 
@@ -80,7 +85,7 @@ function Services() {
             <div className="flex flex-col gap-4">
               <div className="flex justify-between items-center py-3 border-b border-gray-200">
                 <span className="text-gray-700 font-medium">Price per pound</span>
-                <span className="text-green-700 font-bold">$1.99 / lb</span>
+                <span className="text-green-700 font-bold">{price('$1.99 / lb')}</span>
               </div>
               <div className="flex justify-between items-center py-3 border-b border-gray-200">
                 <span className="text-gray-700 font-medium">Minimum order</span>
@@ -134,7 +139,7 @@ function Services() {
                 className="flex items-center justify-between px-6 py-4 rounded-xl bg-gray-50 hover:bg-green-50 transition-colors"
               >
                 <span className="text-gray-700 font-medium">{row.item}</span>
-                <span className="text-green-700 font-bold">{row.price}</span>
+                <span className="text-green-700 font-bold">{price(row.price)}</span>
               </div>
             ))}
 
