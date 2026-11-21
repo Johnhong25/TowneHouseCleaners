@@ -51,27 +51,13 @@ function Home() {
             <div className="relative h-80 rounded-2xl overflow-hidden shadow-lg group">
               <img
                 src={drycleaning}
-                alt="Dry Cleaning"
+                alt="Cleaning"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors" />
               <div className="absolute bottom-0 left-0 right-0 p-6">
-                <h3 className="text-xl font-bold text-white mb-1">Dry Cleaning</h3>
+                <h3 className="text-xl font-bold text-white mb-1">Cleaning</h3>
                 <p className="text-white/80 text-sm">Clean delicate fabrics and tough stains</p>
-              </div>
-            </div>
-
-            {/* Card */}
-            <div className="relative h-80 rounded-2xl overflow-hidden shadow-lg group">
-              <img
-                src={washandfold}
-                alt="Wash & Fold"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors" />
-              <div className="absolute bottom-0 left-0 right-0 p-6">
-                <h3 className="text-xl font-bold text-white mb-1">Wash & Fold</h3>
-                <p className="text-white/80 text-sm">Wash and Fold laundry services per pound</p>
               </div>
             </div>
 
@@ -86,6 +72,20 @@ function Home() {
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <h3 className="text-xl font-bold text-white mb-1">Tailoring</h3>
                 <p className="text-white/80 text-sm">Expert tailor for alterations to clothing  </p>
+              </div>
+            </div>
+
+            {/* Card */}
+            <div className="relative h-80 rounded-2xl overflow-hidden shadow-lg group">
+              <img
+                src={washandfold}
+                alt="Wash & Fold"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors" />
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+                <h3 className="text-xl font-bold text-white mb-1">Wash & Fold</h3>
+                <p className="text-white/80 text-sm">Wash and Fold laundry services per pound</p>
               </div>
             </div>
 

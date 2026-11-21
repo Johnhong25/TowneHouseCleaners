@@ -19,7 +19,7 @@ function Footer() {
         <div>
           <p className="text-white text-lg font-bold mb-2">Town House Cleaners</p>
           <p className="text-sm text-gray-400">
-            Eco-friendly dry cleaning, wash &amp; fold, and tailoring in Co-op City since 1954.
+            Eco-friendly cleaning, wash &amp; fold, and tailoring in Co-op City since 1954.
           </p>
         </div>
 
@@ -49,7 +49,7 @@ function Footer() {
         <div>
           <p className="text-white font-semibold mb-3">Hours</p>
           <ul className="flex flex-col gap-2 text-sm">
-            <li>Tues–Fri: 9am – 6pm</li>
+            <li>Tues–Fri: 8:30am – 6pm</li>
             <li>Sat: 9am – 5pm</li>
             <li>Sun–Mon: Closed</li>
           </ul>

@@ -69,7 +69,7 @@ function Contact() {
             </div>
             <div>
               <p className="font-semibold text-gray-900">Hours</p>
-              <p className="text-gray-500">Tues-Fri: 9am - 6pm</p>
+              <p className="text-gray-500">Tues-Fri: 8:30am - 6pm</p>
               <p className="text-gray-500">Sat: 9am – 5pm</p>
               <p className="text-gray-500">Sun-Mon: Closed</p>
             </div>
